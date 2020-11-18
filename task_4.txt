@@ -1,0 +1,75 @@
+/****************************************************************************
+* @By: Patrick Menendez Rosado
+* @Lab number: 13
+* @CSE 1002 Fund Software Dev 2, Section # , Fall 2020
+* @Date: Nov 20, 2020
+*****************************************************************************/
+
+Queues
+A queue is a data structure that can be used to store items in chronological order, meaning that we use them
+according to how recently they have been added. Commonly, the oldest item is the first one to be used and the newest one
+is the last one (Like a queue in real life).
+
+Demo:
+
+new Queue(5); // creating a queue of size 5
+enqueue(3); //adding 3 to the end of the line (the tail)
+
+in this case, because 3 is the first (and last) item to be added, the list looks like this:
+[3]
+
+enqueue(6); //adding 6 to the end of the line
+
+[3,6]
+
+enqueue(1); //adding 1 to the end of the line
+
+[3,6,1]
+
+dequeue(); // remove the oldest item
+
+>>> 3
+
+[6,1]
+
+dequeue(); // remove the oldest item
+
+>>> 6
+
+[1]
+
+enqueue(9); // adding 9 to the end of the line
+
+[1,9]
+
+dequeue(); // remove the oldest item
+
+>>> 1
+
+[9]
+
+dequeue(); // remove the oldest item
+
+>>> 9
+
+[]  //List is empty
+
+
+enqueue(5); // adding 5 to the end of the line
+
+[5]
+
+enqueue(8); // adding 8 to the end of the line
+
+[5,8]
+
+dequeue(); // remove the oldest item
+
+>>> 5
+
+Front and rear indexes are used to know which item needs to be dequeued.
+However, we need to be careful with the indexes and reset them once the queue is not full
+
+
+
+
